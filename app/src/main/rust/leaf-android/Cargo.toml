@@ -11,9 +11,9 @@ crate-type = ["dylib"]
 
 [features]
 default = [
-    "leaf-mobile/default-ring"
+    "leaf/default-ring"
 ]
 
 [dependencies]
-leaf-mobile = { path = "../leaf/leaf-mobile", package = "leaf-mobile", default-features = false }
+leaf = { path = "../leaf/leaf", package = "leaf", default-features = false }
 jni = { version = "0.19", default-features = false }
