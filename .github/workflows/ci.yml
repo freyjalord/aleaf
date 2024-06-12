@@ -1,6 +1,11 @@
 name: ci
 
-on: [push, pull_request]
+on:
+  workflow_dispatch:
+    inputs:
+      release_tag:
+        required: true
+        type: string
 
 jobs:
   build-leaf-android:
